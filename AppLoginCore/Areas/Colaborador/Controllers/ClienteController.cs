@@ -1,4 +1,6 @@
 ﻿using AppLoginCore.Libraries.Filtro;
+using AppLoginCore.Models;
+using AppLoginCore.Models.Constant;
 using AppLoginCore.Repository.Contract;
 using Microsoft.AspNetCore.Mvc;
 
@@ -24,6 +26,19 @@ namespace AppLoginCore.Areas.Colaborador.Controllers
         {
             _clienteRepository.Desativar(id);
             return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult Cadastrar()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Cadastrar([FromForm] Cliente cliente)
+        {
+            cliente.Situacao = SituacaoConstant.Ativo;
+
+            _clienteRepository.Cadastrar(cliente);
+            return RedirectToAction(nameof(Cadastrar));
         }
 
 
