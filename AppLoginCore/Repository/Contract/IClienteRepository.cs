@@ -19,7 +19,11 @@ namespace AppLoginCore.Repository.Contract
 
         IPagedList<Cliente> ObterTodosClientes(int? pagina, string pesquisa);
 
-
+        
+        public void Ativar (int id);
+        public void Desativar (int id);
         
     }
 }
+
+

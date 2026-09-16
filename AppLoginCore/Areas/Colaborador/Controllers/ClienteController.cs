@@ -1,4 +1,5 @@
-﻿using AppLoginCore.Repository.Contract;
+﻿using AppLoginCore.Libraries.Filtro;
+using AppLoginCore.Repository.Contract;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AppLoginCore.Areas.Colaborador.Controllers
@@ -11,6 +12,18 @@ namespace AppLoginCore.Areas.Colaborador.Controllers
         public ClienteController(IClienteRepository clienteRepository)
         {
             _clienteRepository = clienteRepository;
+        }
+
+        [ValidateHttpReferer]
+        public IActionResult Ativar(int id)
+        {
+            _clienteRepository .Ativar(id);
+            return RedirectToAction(nameof(Index));
+        }
+        public IActionResult Desativar(int id)
+        {
+            _clienteRepository.Desativar(id);
+            return RedirectToAction(nameof(Index));
         }
 
 

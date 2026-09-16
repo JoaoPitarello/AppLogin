@@ -223,6 +223,38 @@ namespace AppLoginCore.Repository
             }
         }
 
+        public void Ativar (int id)
+        {
+            string Situacao = SituacaoConstant.Ativo;
+            using (var conexao = new MySqlConnection(_conexaoMySQL))
+            {
+               conexao.Open();
+                MySqlCommand cmd = new MySqlCommand("update Cliente set Situacao=@Situacao WHERE Id=@Id", conexao);
+
+                cmd.Parameters.Add("@Id", MySqlDbType.VarChar).Value = id;
+                cmd.Parameters.Add("@Situacao", MySqlDbType.VarChar).Value = Situacao;
+                cmd.ExecuteNonQuery();
+                conexao.Close() ;
+            }
+        }
+
+       
+        public void Desativar(int Id)
+        {
+            string Situacao = SituacaoConstant.Desativado;
+            using (var conexao = new MySqlConnection(_conexaoMySQL))
+            {
+                conexao.Open();
+                MySqlCommand cmd = new MySqlCommand("update Cliente set Situacao=@Situacao WHERE Id=@Id ", conexao);
+
+                cmd.Parameters.Add("@Id", MySqlDbType.VarChar).Value = Id;
+                cmd.Parameters.Add("@Situacao", MySqlDbType.VarChar).Value = Situacao;
+
+                cmd.ExecuteNonQuery();
+                conexao.Close();
+            }
+        }
+
         public IPagedList<Cliente> ObterTodosClientes(int? pagina, string pesquisa)
         {
             throw new NotImplementedException();

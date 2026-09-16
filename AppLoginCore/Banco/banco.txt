@@ -21,3 +21,5 @@ create table Colaborador(
     Senha varchar(8) not null,
     Tipo varchar(8) not null
 );
+select * from Colaborador;
+insert int Colaborador values ("Negao Delicia", "negao@gmail.com", 12345678, "Gay");

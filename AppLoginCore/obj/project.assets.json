@@ -5706,11 +5706,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\3MTEC\\Downloads\\AppLoginCore-main (1)\\AppLoginCore-main\\AppLoginCore\\AppLoginCore.csproj",
+      "projectUniqueName": "C:\\Users\\3MTEC\\Desktop\\Aula1609\\AppLoginCore\\AppLoginCore.csproj",
       "projectName": "AppLoginCore",
-      "projectPath": "C:\\Users\\3MTEC\\Downloads\\AppLoginCore-main (1)\\AppLoginCore-main\\AppLoginCore\\AppLoginCore.csproj",
+      "projectPath": "C:\\Users\\3MTEC\\Desktop\\Aula1609\\AppLoginCore\\AppLoginCore.csproj",
       "packagesPath": "C:\\Users\\3MTEC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\3MTEC\\Downloads\\AppLoginCore-main (1)\\AppLoginCore-main\\AppLoginCore\\obj\\",
+      "outputPath": "C:\\Users\\3MTEC\\Desktop\\Aula1609\\AppLoginCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
