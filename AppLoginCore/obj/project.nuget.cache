@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iTD8OTFgJ+U=",
+  "dgSpecHash": "WKDGO7nMA0U=",
   "success": true,
-  "projectFilePath": "C:\\Users\\3MTEC\\Desktop\\Aula1609\\AppLoginCore\\AppLoginCore.csproj",
+  "projectFilePath": "C:\\Users\\3MTEC\\Desktop\\1609\\AppLoginCore\\AppLoginCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\3MTEC\\.nuget\\packages\\bouncycastle.cryptography\\2.6.2\\bouncycastle.cryptography.2.6.2.nupkg.sha512",
     "C:\\Users\\3MTEC\\.nuget\\packages\\google.protobuf\\3.32.0\\google.protobuf.3.32.0.nupkg.sha512",
@@ -125,9 +125,9 @@
       "code": "NU1901",
       "level": "Warning",
       "message": "O pacote 'NuGet.Packaging' 6.12.1 tem uma baixa vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
-      "projectPath": "C:\\Users\\3MTEC\\Desktop\\Aula1609\\AppLoginCore\\AppLoginCore.csproj",
+      "projectPath": "C:\\Users\\3MTEC\\Desktop\\1609\\AppLoginCore\\AppLoginCore.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\3MTEC\\Desktop\\Aula1609\\AppLoginCore\\AppLoginCore.csproj",
+      "filePath": "C:\\Users\\3MTEC\\Desktop\\1609\\AppLoginCore\\AppLoginCore.csproj",
       "libraryId": "NuGet.Packaging",
       "targetGraphs": [
         "net10.0"
@@ -137,9 +137,9 @@
       "code": "NU1901",
       "level": "Warning",
       "message": "O pacote 'NuGet.Protocol' 6.12.1 tem uma baixa vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
-      "projectPath": "C:\\Users\\3MTEC\\Desktop\\Aula1609\\AppLoginCore\\AppLoginCore.csproj",
+      "projectPath": "C:\\Users\\3MTEC\\Desktop\\1609\\AppLoginCore\\AppLoginCore.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\3MTEC\\Desktop\\Aula1609\\AppLoginCore\\AppLoginCore.csproj",
+      "filePath": "C:\\Users\\3MTEC\\Desktop\\1609\\AppLoginCore\\AppLoginCore.csproj",
       "libraryId": "NuGet.Protocol",
       "targetGraphs": [
         "net10.0"

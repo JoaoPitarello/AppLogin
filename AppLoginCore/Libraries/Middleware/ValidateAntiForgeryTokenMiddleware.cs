@@ -18,7 +18,7 @@ namespace AppLoginCore.Libraries.Middleware
             {
                 await _antiforgery.ValidateRequestAsync(context);
             }
-            await _next(context);
+            \await _next(context);
         }
     }
 }
