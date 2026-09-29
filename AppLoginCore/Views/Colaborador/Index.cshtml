@@ -1,0 +1,51 @@
+@model IEnumerable<AppLoginCore.Models.Colaborador>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Senha)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CPF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tipo)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (Colaborador colaborador in Model) {
+    <tr>
+        <th scope="row">@colaborador.Id</th>
+        <td>@colaborador.Nome</td>
+        <td>@colaborador.Email</td>
+        <td>@colaborador.Senha</td>
+
+        <td>
+            <a asp-action="Atualizar" asp-route-id="@colaborador.Id" class="btn btn-secondary">Atualizar</a>
+            <a asp-action="Atualizar" asp-route-id="@colaborador.Id" class="btn btn-danger">Desativar</a>
+        </td>
+    </tr>
+}
+    </tbody>
+</table>
